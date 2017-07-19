@@ -1,0 +1,13 @@
+<html>
+<body>
+{% if display == True %}
+<ol>
+{% for name in list %}
+<li> {{name}} </li>
+{% endfor %}  
+</ol>
+{%else%}
+<IMG SRC= "../static/leo.jpg">
+{% endif %}
+</body>
+</html>

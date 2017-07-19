@@ -1,0 +1,84 @@
+
+/*.mypic{
+	float: right;
+	width: 300px;
+	height:400px;
+	margin-top:76px;
+	margin-left:79px;
+	position: absolute;
+
+}*/
+nav[role="main"]{
+	color:black;
+	background-color: rgba(32,178,170,0.40);
+	text-decoration: none;
+	margin-top: -50px;
+	width: auto;
+	
+}
+ul li{
+
+	text-decoration: none;
+	font-size: 30px;
+	display: inline-block;
+	padding:20px;
+
+}
+.Mays{
+	float: right;	
+	margin-top: 23px;
+}
+.mypic{
+	height: 600px;
+	width: 400px;
+}
+.snap{
+	height: 170px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 50px;
+}
+.inst{
+	height: 170px;
+	float:left;
+}
+.gmail{
+	height: 170px;
+	float:left;
+	margin-left: 20px;
+}
+.slack{
+	height: 170px;
+	float:left;
+	margin-left: 20px;
+}
+.img1{
+	height: 230px;
+	float:left;
+	margin-left: 20px;
+}
+.img2{
+	height: 230px;
+	margin-left: -230px;
+	margin-top: 250px;
+}
+nav[role="sub"]{
+	color:black;
+	background-color: rgba(32,178,170,0.40);
+	text-decoration: none;
+	margin-top: 0px;
+	width: auto;
+}
+ul li a{
+	
+	display: inline-block;
+	padding:20px;
+}
+ul li b{
+	text-decoration: none;
+	display: inline-block;
+}
+
+p.italic {
+    font-style: italic;
+}

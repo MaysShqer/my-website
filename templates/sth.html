@@ -1,0 +1,57 @@
+{%extends "base.html"%}
+{%block body%}  	
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+ <img src="../static/IMG_0172.JPG" style="width:500px">
+</div>
+
+<div class="mySlides fade">
+ <img src="../static/IMG-20170114-WA0055.jpg" style="width:500px">
+</div>  
+
+<div class="mySlides fade">
+ <img src="../static/IMG_0236.JPG" style="width:500px ">
+</div>
+
+<div class="mySlides fade">
+ <img src="../static/13819729_1011079878988001_645146893_n.jpg" style="width:500px">
+</div>
+
+
+<div class="mySlides fade">
+  <img src="../static/13681038_1013045338791455_108045525671682494_n.jpg" style="width:50%">
+</div>
+
+</div>
+<br>
+
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+{%endblock%}
